@@ -11,7 +11,12 @@ header {
 }
 footer {
     text-align: center;
-    padding: 100px;
+    margin: 0;
+    padding: 20px 0;
+    height: auto;
+    background: rgb(218, 235, 238);
+    bottom: 0;
+    width: 100%;
 }
 a {
     text-decoration: none;
@@ -23,6 +28,9 @@ p {
 img {
     max-width: 100%;
     height: auto;
+}
+.main-content {
+    position: relative;
 }
 
 /* ****
@@ -71,15 +79,21 @@ img {
     cell phones
 **** */
 
-@media all and (max-width: 600px) {
+@media (max-width: 600px) {
     .navbar {
+        display: flex;
         flex-wrap: wrap;
-        padding: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center
     }
     .nav-item {
-        padding: 10px;
+        padding: 2px;
         margin: 0;
         font-size: 12px;
+        flex: 1 1 100%;
+        text-align: center;
+        width: 100%;
     }
     .blog-page {
         padding: 30px;
@@ -90,6 +104,11 @@ img {
     }
     p {
         margin: 0 auto;
+        font-size: 16px;
+    }
+    h1 {
+        height: auto;
+        width: autho;
     }
 }
 
