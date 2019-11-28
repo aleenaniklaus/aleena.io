@@ -4,7 +4,7 @@
 Code for personal website aleena.io, tailored to general use, and multiple reuse. The goal of this project is to take recently learned skills of HTML/CSS/JS and apply it to a website already up and running. Previously, aleena.io was themed with grayscale Bootstrap template. 
 
 
-[home page](img/homescreen.png)
+![home page](website/img/homescreen.png)
 
 ### New Updates
 Using templating with vanilla JavaScript, Node, and Express for back end, the result is a simple system that works to pull requested page and insert it into the <title> of a given HTML page. Content is inserted into the template.html file using regular expressions by finding string CONTENT and replacing it with the requested page's HTML. 
