@@ -1,0 +1,116 @@
+/* ****
+GLOBAL VARIABLES
+**** */
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    text-align: center;
+    padding-top: 75px;
+}
+footer {
+    text-align: center;
+    padding: 100px;
+}
+a {
+    text-decoration: none;
+}
+p {
+    padding-bottom: 40px;
+    margin: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ****
+    NAVBAR
+**** */
+
+.navbar {
+    display:flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(218, 235, 238);
+    color: rgb(116, 156, 107);
+
+
+    /* margin 0 & padding 0 makes navbar fit to screen properly */
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+}
+
+/* ****
+    SPECIAL 
+    ITEMS
+**** */
+
+.home {
+    flex-grow: 1;
+}
+.foot {
+    font-size: 14px;
+    padding: 25px;
+}
+.blog-page {
+    padding: 150px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* ****
+    MEDIA ITEMS
+    cell phones
+**** */
+
+@media all and (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .nav-item {
+        padding: 10px;
+        margin: 0;
+        font-size: 12px;
+    }
+    .blog-page {
+        padding: 30px;
+    }
+    .media-item > p {
+        padding: 0 10px 50px;
+        text-align: left;
+    }
+    p {
+        margin: 0 auto;
+    }
+}
+
+/* ****
+    GALLERY/IMGS
+**** */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container > img {
+    width: 75%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    align-content: center;
+}
+.media {
+    justify-content: center;
+    text-align: center;
+}
