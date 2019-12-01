@@ -26,7 +26,7 @@ p {
     margin: auto;
 }
 img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
 }
 .main-content {
@@ -85,7 +85,7 @@ img {
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center
+        align-items: center;
     }
     .nav-item {
         padding: 2px;
@@ -109,6 +109,9 @@ img {
     h1 {
         height: auto;
         width: autho;
+    }
+    img {
+        max-width: 100%;
     }
 }
 
