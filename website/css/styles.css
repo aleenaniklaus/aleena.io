@@ -1,14 +1,21 @@
+/* ***
+ Color scheme used: 
+https://coolors.co/3c91e6-d0e562-c6878f-b79d94-012a36 
+*** */
+
 /* ****
 GLOBAL VARIABLES
 **** */
 body {
-    position: relative;
     margin: 0;
+    color: #fff;
+    background-color: #012a36;
+    position: relative;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 header {
     text-align: center;
-    padding-top: 15px;
+    padding: 15px;
 }
 footer {
     bottom: 0;
@@ -17,16 +24,32 @@ footer {
     text-align: center;
     margin: 0;
     padding: 10px 0;
-    background: rgb(218, 235, 238);
+    background-color: #b79d94;
     bottom: 0;
     width: 100%;
 }
+.subscribe {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    color: #c6878f; 
+    border: none;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 a {
+    color: #d0e562;
     text-decoration: none;
 }
+
 p {
     padding-bottom: 40px;
-    margin: auto;
+    margin: 0 auto;
 }
 img {
     max-width: 75%;
@@ -40,13 +63,13 @@ img {
     NAVBAR
 **** */
 
-.navbar {
+.navbar, a:visited {
     display:flex;
     position: relative;
     top: 0;
     width: 100%;
-    background: rgb(218, 235, 238);
-    color: rgb(116, 156, 107);
+    background-color: #b79d94;
+    color: #d0e562;
 
 
     /* margin 0 & padding 0 makes navbar fit to screen properly */
@@ -77,7 +100,16 @@ img {
     margin: 0 auto;
     text-align: justify;
 }
-
+.media-page {
+    margin: 0 auto;
+    padding: 150px;
+}
+.media-page > p {
+    padding: 0 150px 50px;
+}
+.media-item {
+    text-align: center;
+}
 
 /* ****
     GALLERY/IMGS
@@ -96,17 +128,18 @@ img {
     padding: 2px;
     align-content: center;
 }
-.media {
+.gallery {
     justify-content: center;
     text-align: center;
 }
+
 
 /* ****
     MEDIA ITEMS
     cell phones
 **** */
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .navbar {
         display: flex;
         flex-wrap: wrap;
@@ -124,10 +157,14 @@ img {
     }
     .blog-page {
         padding: 30px;
+        margin: 0 auto;
     }
-    .media-item > p {
-        padding: 0 10px 50px;
-        text-align: left;
+    .media-page {
+        margin: 0 auto;
+        padding: 30px;
+    }
+    .media-page > p {
+        padding: 30px;
     }
     p {
         margin: 0 auto;
