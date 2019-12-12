@@ -11,8 +11,10 @@ Using templating with vanilla JavaScript, Node, and Express for back end, the re
 
 UI is now all done with CSS instead of Bootstrap. In the future this may change, but this was a design choice to help seal in knowledge rather than purley for esthetics.
 
+Developed color scheme using: [https://coolors.co/3c91e6-d0e562-c6878f-b79d94-012a36](https://coolors.co/3c91e6-d0e562-c6878f-b79d94-012a36)
+
 TODOs:
-1. Develop color scheme & migrate to Bootstrap (without template)
+1. Migrate to Bootstrap (without template)
 2. Background image for home page
 3. Template blog & pull information from file (instead of hard coding it in)
 4. Set up database for archiving blogs and running galleries
